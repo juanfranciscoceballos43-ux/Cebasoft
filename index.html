@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CebaSoft | Soluciones digitales</title>
+  <meta name="description" content="CebaSoft desarrolla aplicaciones y herramientas digitales prácticas para facilitar la administración y organización de negocios.">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      background: #f7f8fa;
+      color: #1f2937;
+    }
+    header {
+      background: #111827;
+      color: white;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .logo { font-size: 1.35rem; font-weight: 800; }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: .95rem;
+    }
+    nav a:hover { text-decoration: underline; }
+    .hero {
+      padding: 90px 7%;
+      background: white;
+      text-align: center;
+    }
+    .hero h1 { font-size: clamp(2.4rem, 7vw, 4.5rem); margin-bottom: 12px; }
+    .hero p {
+      max-width: 680px;
+      margin: 0 auto 28px;
+      font-size: 1.15rem;
+      color: #4b5563;
+    }
+    .button {
+      display: inline-block;
+      padding: 13px 22px;
+      border-radius: 9px;
+      background: #111827;
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    section { padding: 65px 7%; }
+    .container { max-width: 980px; margin: auto; }
+    h2 { font-size: 2rem; margin-bottom: 18px; }
+    .about p { max-width: 760px; color: #4b5563; }
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 8px 30px rgba(0,0,0,.07);
+      margin-top: 22px;
+    }
+    .card h3 { font-size: 1.5rem; margin-bottom: 10px; }
+    .card p { color: #4b5563; }
+    footer {
+      background: #111827;
+      color: #d1d5db;
+      text-align: center;
+      padding: 30px 7%;
+      font-size: .9rem;
+    }
+    @media (max-width: 650px) {
+      header { flex-direction: column; gap: 10px; }
+      nav a { margin: 0 7px; }
+      .hero { padding: 65px 7%; }
+      section { padding: 48px 7%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">CebaSoft</div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre">Sobre nosotros</a>
+      <a href="#apps">Aplicaciones</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <h1>CebaSoft</h1>
+      <p>Soluciones digitales para hacer más fácil el trabajo diario.</p>
+      <a class="button" href="#apps">Ver aplicación</a>
+    </section>
+
+    <section class="about" id="sobre">
+      <div class="container">
+        <h2>Sobre CebaSoft</h2>
+        <p>
+          CebaSoft desarrolla aplicaciones y herramientas digitales enfocadas
+          en resolver necesidades reales de administración, organización y
+          control de operaciones.
+        </p>
+      </div>
+    </section>
+
+    <section id="apps">
+      <div class="container">
+        <h2>Aplicaciones</h2>
+        <div class="card">
+          <h3>🍎 Cuartos Fríos</h3>
+          <p>
+            Aplicación para administrar y controlar el almacenamiento de
+            manzana en cuartos fríos, facilitando la organización de espacios
+            y la consulta de información.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 CebaSoft. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
